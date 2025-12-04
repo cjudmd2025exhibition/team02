@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재활 동작 인식 (포즈)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+    <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img src="image/main logo.png" alt="로고" class="logo" />
+      <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+  <section class="zoom-hero-section reveal">
+    <div class="zoom-hero-banner">
+      <img src="image/zoom banner.png" alt="온라인 강의 배너" class="zoom-banner-image">
+      <div class="zoom-banner-overlay">
+        <div class="zoom-banner-content">
+          <h3 class="zoom-banner-subtitle">가온결만의 실시간 코칭을 만나보세요</h3>
+          <h1 class="zoom-banner-title">개인 맞춤형 온라인 수업</h1>
+          <p class="zoom-banner-description">환자 상태에 맞춘 단계별 운동 프로세스</p>
+          <button class="zoom-banner-cta" onclick="window.location.href='zoom-down.html'">강의 참여하기</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- 맞춤 클래스 추천 Section -->
+    <section class="zoom-class-recommendation reveal">
+      <div class="container">
+        <div class="recommendation-header">
+          <h1 class="recommendation-title">
+            손목이 불편한 채민님을 위한 맞춤 클래스 추천
+          </h1>
+        </div>
+        
+        <div class="class-cards">
+          <div class="class-card">
+            <div class="card-image">
+              <img src="image/core.png" alt="코어단련">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">코어단련</h3>
+              <p class="card-subtitle">몸의 중심강화를 위한 코어단련을 해봐요</p>
+            </div>
+          </div>
+          
+          <div class="class-card">
+            <div class="card-image">
+              <img src="image/skeleton.png" alt="관절운동">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">관절운동</h3>
+              <p class="card-subtitle">관절이 부드러워지게 스트레칭 해봐요</p>
+            </div>
+          </div>
+          
+          <div class="class-card">
+            <div class="card-image">
+              <img src="image/streching.png" alt="스트레칭">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">스트레칭</h3>
+              <p class="card-subtitle">손목스냅의 기억을 떠올려봐요</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 배경 포함 섹션 시작 -->
+    <div class="zoom-bg-section">
+    <!-- 온라인 치료 기법 안내 Section -->
+    <section class="zoom-treatment-guide reveal">
+      <div class="container">
+        <h2 class="treatment-title">가온결의 온라인 치료 기법 안내</h2>
+        
+        <div class="treatment-content">
+          <div class="treatment-text">
+            <!-- 첫 번째 이미지 설명 -->
+            <div class="treatment-description active" data-image="1">
+              <h3 class="treatment-subtitle">행동 경험 운동</h3>
+              <h4>거울 반응 치료</h4>
+              <p>거울 반응 치료는 마비된 팔을 직접 움직이지 않아도, 거울을 통해 마치 뇌가 직접 움직였다고 학습하게 하는 뇌 기반의 재활 기법입니다.
+              뇌졸중 후 상지 마비 환자의 기능 회복에 과학적으로 중등도 이상의 효과가 있으며, 신경의 구조적·기능적 가소성을 유도하는 데 효과적인 도구로 인정받고 있습니다.
+              거울 반응 치료는 시각적 착시를 이용한 재활 운동법으로, 마비된 팔을 직접 움직이지 않아도 치료 효과를 기대할 수 있는 접근법입니다.</p>
+              
+              <h4>치료 원리</h4>
+              <p>환자가 거울을 중간에 두고 비마비된 팔을 움직이는 모습을 보면, 뇌는 그것이 마비된 팔이 움직이는 것으로 착각하게 됩니다. 이러한  시각적 피드백을 통해 뇌에 '움직임이 일어났다'는 신호가 전달되어, 운동 관련 뇌 영역이 활성화되고 재조직되는 효과가 발생합니다</p>
+              <button class="treatment-cta" onclick="window.location.href='zoom-down.html'">행동 경험 운동 강의 바로가기</button>
+            </div>
+            
+            <!-- 두 번째 이미지 설명 -->
+            <div class="treatment-description" data-image="2">
+              <h3 class="treatment-subtitle">아령형 악력 센서 재활 운동 </h3>
+              <h4>감각 기반 상지 재활 훈련</h4>
+              <p>아령형 악력 센서를 이용한 재활 운동은 손의 근육을 직접 쥐고 힘을 주는 동작을 통해 감각과 운동을 동시에 자극하는 훈련법입니다.
+               손의 압력 변화가 센서를 통해 시각적으로 피드백되며, 반복적인 자극이 뇌의 운동 회로를 활성화시켜 
+               손 기능 회복을 돕습니다</p>
+              
+              <h4>치료 원리</h4>
+              <p>손을 쥘 때 발생하는 압력과 촉각 자극이 신경을 통해 뇌로 전달되어, 운동 피질이 다시 활성화됩니다.
+               이 감각 자극은 뇌가 ‘손이 움직였다’고 인식하게 하여 신경 회로의 재조직과 회복을 촉진합니다.
+               즉, 손의 감각을 이용해 뇌를 다시 훈련시키는 재활 원리입니다.</p>
+              <button class="treatment-cta" onclick="window.location.href='zoom-down.html'">라이브 강의 바로가기</button>
+            </div>
+          </div>
+          
+          <div class="treatment-images">
+            <div class="treatment-image" data-target="1">
+              <img src="image/mirror.png" alt="거울 치료">
+            </div>
+            <div class="treatment-image" data-target="2">
+              <img src="image/zoom-mirror.png" alt="온라인 강의">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 이달의 인기 수업 Section -->
+    <section class="zoom-popular-classes reveal">
+      <div class="container">
+        <h2 class="popular-title">이달의 인기 수업</h2>
+        
+        <div class="classes-carousel">
+          <div class="carousel-container">
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom5.png" alt="근력 운동">
+              </div>
+              <div class="class-info">
+                <h3>근력 운동</h3>
+                <p>손과 손목을 위한 근력 강화</p>
+              </div>
+            </div>
+            
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom4.png" alt="코어 단련">
+              </div>
+              <div class="class-info">
+                <h3>코어 단련</h3>
+                <p>몸의 주축이 되는 코어 살리기</p>
+              </div>
+            </div>
+            
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom3.png" alt="유연성 운동">
+              </div>
+              <div class="class-info">
+                <h3>유연성 운동</h3>
+                <p>몸의 부드러움을 위한 운동 세션</p>
+              </div>
+            </div>
+            
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom1.png" alt="근육 단련">
+              </div>
+              <div class="class-info">
+                <h3>근육 단련</h3>
+                <p>손과 손가락을 강화를 위한 근력 운동</p>
+              </div>
+            </div>
+            
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom2.png" alt="스트레칭">
+              </div>
+              <div class="class-info">
+                <h3>스트레칭</h3>
+                <p>유연성을 늘려주는 스트레칭</p>
+              </div>
+            </div>
+
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom6.png" alt="밸런스 트레이닝">
+              </div>
+              <div class="class-info">
+                <h3>밸런스 트레이닝</h3>
+                <p>몸의 밸런스와 안정성 향상</p>
+              </div>
+            </div>
+
+            <div class="class-item">
+              <div class="class-image">
+                <img src="image/zoom7.png" alt="호흡 스트레칭">
+              </div>
+              <div class="class-info">
+                <h3>호흡 스트레칭</h3>
+                <p>호흡과 함께하는 릴렉스</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-indicator">
+            <div class="indicator-bar">
+              <div class="indicator-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 강의 더 둘러보기 Section -->
+    <section class="zoom-more-classes reveal">
+      <div class="container">
+        <h2 class="section-title">강의 더 둘러보기</h2>
+        <div class="more-grid">
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/zoom8.jpg" alt="손과 팔목의 근육 길러보기"></div>
+            <div class="more-meta">03.15 실시간 줌 수업</div>
+            <h3 class="more-title">손과 팔목의 근육 길러보기</h3>
+          </article>
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/zoom9.jpg" alt="혼자가 아닌 즐겁게 해보는 기본 운동"></div>
+            <div class="more-meta">06.11 실시간 줌 수업</div>
+            <h3 class="more-title">혼자가 아닌 즐겁게 해보는 기본 운동</h3>
+          </article>
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/zoom10.jpg" alt="전완근 단련 수업"></div>
+            <div class="more-meta">04.05 실시간 줌 수업</div>
+            <h3 class="more-title">전완근 단련 수업</h3>
+          </article>
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/teacher4.png" alt="중심근육 단련 훈련"></div>
+            <div class="more-meta">05.24 실시간 줌 수업</div>
+            <h3 class="more-title">중심근육 단련 훈련</h3>
+          </article>
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/zoom12.png" alt="근력 힘을 유지하는 연습 해보기"></div>
+            <div class="more-meta">08.04 실시간 줌 수업</div>
+            <h3 class="more-title">근력 힘을 유지하는 연습 해보기</h3>
+          </article>
+          <article class="more-card">
+            <div class="more-thumb"><img src="image/zoom11.png" alt="손목의 힘을 키워보아요"></div>
+            <div class="more-meta">03.04 실시간 줌 수업</div>
+            <h3 class="more-title">손목의 힘을 키우기</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 강사 소개 Section -->
+    <section class="zoom-instructors reveal">
+      <div class="container">
+        <h2 class="section-title">강사 소개</h2>
+        <div class="instructor-list">
+          <div class="instructor-item">
+            <img src="image/teacher7.png" alt="닥터윤" class="instructor-avatar">
+            <div class="instructor-name">닥터윤</div>
+            <div class="instructor-desc">친근하고 빠르게! 정확한 코칭법을 쉽게 노출합니다.</div>
+          </div>
+          <div class="instructor-item">
+            <img src="image/haneul.png" alt="하늘" class="instructor-avatar">
+            <div class="instructor-name">하늘</div>
+            <div class="instructor-desc">초보자 운동도 기초부터 탄탄하게</div>
+          </div>
+          <div class="instructor-item">
+            <img src="image/doctor.png" alt="힐링닥터" class="instructor-avatar">
+            <div class="instructor-name">힐링닥터</div>
+            <div class="instructor-desc">힐링이 되는 근육 케어 함께 시작해요.</div>
+          </div>
+          <div class="instructor-item">
+            <img src="image/teacher10.png" alt="미스터최" class="instructor-avatar">
+            <div class="instructor-name">미스터최</div>
+            <div class="instructor-desc">좋은 재활에는 모든 이유가 있습니다.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="review-section reveal">
+      <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+      <div class="review-text">
+        <span class="text-line-1">더 나은</span>
+        <span class="text-line-2">내일을 위한 작은 습관</span>
+      </div>
+      <div class="review-cta">
+        <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+      </div>
+    </section>
+
+  <!-- 하단 정보 Section (공통) -->
+  <footer class="footer-section" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="image/main logo.png" alt="가온결 로고" class="logo-image">
+          <span>가온결</span>
+        </div>
+        <div class="footer-info">
+          <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+          <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+          <p><strong>인스타:</strong> @인스타 계정</p>
+          <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+        </div>
+        <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Draggable progress bar controls horizontal scroll
+    (function() {
+      const container = document.querySelector('.classes-carousel .carousel-container');
+      const bar = document.querySelector('.indicator-bar');
+      const knob = document.querySelector('.indicator-progress');
+      if (!container || !bar || !knob) return;
+
+      const updateFromScroll = () => {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        const ratio = maxScroll === 0 ? 0 : container.scrollLeft / maxScroll;
+        const trackWidth = bar.clientWidth - knob.clientWidth;
+        knob.style.left = (trackWidth * ratio) + 'px';
+      };
+
+      const updateFromKnob = (clientX) => {
+        const rect = bar.getBoundingClientRect();
+        const x = Math.min(Math.max(clientX - rect.left - knob.clientWidth/2, 0), rect.width - knob.clientWidth);
+        knob.style.left = x + 'px';
+        const ratio = x / (rect.width - knob.clientWidth);
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        container.scrollLeft = maxScroll * ratio;
+      };
+
+      let dragging = false;
+      const start = (e) => { dragging = true; e.preventDefault(); };
+      const move = (e) => { if (!dragging) return; const clientX = e.touches ? e.touches[0].clientX : e.clientX; updateFromKnob(clientX); };
+      const end = () => dragging = false;
+
+      knob.addEventListener('mousedown', start);
+      window.addEventListener('mousemove', move);
+      window.addEventListener('mouseup', end);
+
+      knob.addEventListener('touchstart', start, { passive: true });
+      window.addEventListener('touchmove', move, { passive: true });
+      window.addEventListener('touchend', end);
+
+      container.addEventListener('scroll', updateFromScroll);
+      window.addEventListener('resize', updateFromScroll);
+      updateFromScroll();
+    })();
+  </script>
+  
+  <script>
+    // Treatment 이미지 호버 시 설명 텍스트 변경
+    document.addEventListener('DOMContentLoaded', function() {
+      const treatmentImages = document.querySelectorAll('.treatment-image');
+      const treatmentDescriptions = document.querySelectorAll('.treatment-description');
+      
+      treatmentImages.forEach(image => {
+        image.addEventListener('mouseenter', function() {
+          const targetId = this.getAttribute('data-target');
+          
+          // 모든 설명 숨기기
+          treatmentDescriptions.forEach(desc => {
+            desc.classList.remove('active');
+          });
+          
+          // 해당 설명 보이기
+          const targetDesc = document.querySelector(`.treatment-description[data-image="${targetId}"]`);
+          if (targetDesc) {
+            targetDesc.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

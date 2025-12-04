@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재활 동작 인식 (포즈)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+    <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img src="image/main logo.png" alt="로고" class="logo" />
+        <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+
+  <!-- 실시간 접속자 통계 섹션 -->
+  <section class="zoom-down-live-stats-section">
+    <img src="image/zoom-down-banner.png" alt="배경" class="zoom-down-bg-image">
+    <div class="zoom-down-stats-container">
+      <div class="zoom-down-stats-content">
+        <div class="zoom-down-stats-main-text">
+          <span class="zoom-down-stats-number" id="liveCounter">121</span>
+          <span class="zoom-down-stats-unit">명의 회원들이</span>
+        </div>
+        <div class="zoom-down-stats-sub-text">지금 접속해 있어요!</div>
+        <div class="zoom-down-stats-description">다함께 힘내서 하는 가온결의 줌 클래스 서비스</div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- 초급반 줌 클래스 소개 섹션 -->
+    <section class="zoom-down-beginner-class-section reveal">
+      <div class="container">
+        <div class="zoom-down-beginner-content">
+          <div class="zoom-down-beginner-image">
+            <img src="image/zoom-class1.png" alt="초급반 줌 클래스">
+          </div>
+          <div class="zoom-down-beginner-text">
+            <h2 class="zoom-down-beginner-title">초급반 줌 클래스</h2>
+            <p class="zoom-down-beginner-description">
+              "안전한 환경에서 마비된 팔과 손의 움직임 회복, 신체 전반의 유연성 및 기초 협응력 강화 운동"
+            </p>
+            <p class="feature-detail">
+              <span class="highlight-green">기존 기능을 익히고 유지하는데 초점을 맞춘 기초반</span>
+            </p>
+            <button class="zoom-down-beginner-cta">초급반 줌 클래스 바로가기</button>
+          </div>
+        </div>
+        
+        <!-- 초급반 운동 카드들 -->
+        <div class="zoom-down-beginner-exercises-grid">
+          <div class="zoom-down-beginner-exercise-card">
+            <div class="zoom-down-beginner-exercise-number">1</div>
+            <div class="zoom-down-beginner-exercise-text">좌우 회전 기초 운동</div>
+          </div>
+          <div class="zoom-down-beginner-exercise-card">
+            <div class="zoom-down-beginner-exercise-number">2</div>
+            <div class="zoom-down-beginner-exercise-text">균형 잡기 운동</div>
+          </div>
+          <div class="zoom-down-beginner-exercise-card">
+            <div class="zoom-down-beginner-exercise-number">3</div>
+            <div class="zoom-down-beginner-exercise-text">작은 각도 반복 운동</div>
+          </div>
+          <div class="zoom-down-beginner-exercise-card">
+            <div class="zoom-down-beginner-exercise-number">4</div>
+            <div class="zoom-down-beginner-exercise-text">마무리 스트레칭</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 고급반 줌 클래스 소개 섹션 -->
+    <section class="zoom-down-advanced-class-section reveal">
+      <div class="container">
+        <div class="zoom-down-advanced-content">
+          <div class="zoom-down-advanced-text">
+            <h2 class="zoom-down-advanced-title">고급반 줌 클래스</h2>
+            <p class="zoom-down-advanced-description">
+              "심화된 패턴을 통해 어깨와 팔의 근력을 강화하고, 전체적인 운동 지속 능력을 기르는 고급 프로그램"
+            </p>
+            <p class="feature-detail">
+              <span class="highlight-green">근력 강화, 운동 지속능력을 키우는데에 초점을 둔 고급반</span>
+            </p>
+            <button class="zoom-down-advanced-cta">고급반 줌 클래스 바로가기</button>
+          </div>
+          <div class="zoom-down-advanced-image">
+            <img src="image/zoom-class2.png" alt="고급반 줌 클래스">
+          </div>
+        </div>
+        
+        <!-- 고급반 운동 카드들 -->
+        <div class="zoom-down-advanced-exercises-grid">
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">1</div>
+            <div class="zoom-down-advanced-exercise-text">좌우 회전 기초 운동</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">2</div>
+            <div class="zoom-down-advanced-exercise-text">균형 잡기 운동</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">3</div>
+            <div class="zoom-down-advanced-exercise-text">작은 각도 반복 운동</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">4</div>
+            <div class="zoom-down-advanced-exercise-text">마무리 스트레칭</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">5</div>
+            <div class="zoom-down-advanced-exercise-text">약한 팔만 돌리기</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">6</div>
+            <div class="zoom-down-advanced-exercise-text">부릉~가요 운동</div>
+          </div>
+          <div class="zoom-down-advanced-exercise-card">
+            <div class="zoom-down-advanced-exercise-number">7</div>
+            <div class="zoom-down-advanced-exercise-text">2분 간 일정속도로 돌리기</div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section class="review-section">
+      <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+      <div class="review-text">
+        <span class="text-line-1">더 나은</span>
+        <span class="text-line-2">내일을 위한 작은 습관</span>
+      </div>
+      <div class="review-cta">
+        <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+      </div>
+    </section>
+  <!-- 하단 정보 Section (공통) -->
+  <footer class="footer-section" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="image/main logo.png" alt="가온결 로고" class="logo-image">
+          <span>가온결</span>
+        </div>
+        <div class="footer-info">
+          <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+          <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+          <p><strong>인스타:</strong> @인스타 계정</p>
+          <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+        </div>
+        <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 실시간 접속자 수 카운터 - 다이얼 효과
+    (function() {
+      const counterElement = document.getElementById('liveCounter');
+      let currentCount = 121;
+      const minCount = 0;
+      const maxCount = 200;
+      
+      function animateCounter(newCount) {
+        const startCount = currentCount;
+        const difference = newCount - startCount;
+        const duration = 1000; // 1초
+        const steps = 30;
+        const stepTime = duration / steps;
+        const stepValue = difference / steps;
+        
+        let step = 0;
+        const timer = setInterval(() => {
+          step++;
+          currentCount = Math.round(startCount + (stepValue * step));
+          
+          // 범위 제한
+          if (currentCount < minCount) currentCount = minCount;
+          if (currentCount > maxCount) currentCount = maxCount;
+          
+          counterElement.textContent = currentCount;
+          
+          if (step >= steps) {
+            clearInterval(timer);
+            currentCount = newCount;
+            counterElement.textContent = currentCount;
+          }
+        }, stepTime);
+      }
+      
+      function getRandomCount() {
+        return Math.floor(Math.random() * (maxCount - minCount + 1)) + minCount;
+      }
+      
+      // 초기화 후 랜덤 카운터 시작
+      setTimeout(() => {
+        setInterval(() => {
+          const newCount = getRandomCount();
+          if (newCount !== currentCount) {
+            animateCounter(newCount);
+          }
+        }, 3000 + Math.random() * 4000); // 3-7초 간격으로 변경
+      }, 2000); // 2초 후 시작
+      
+    })();
+
+    // Draggable progress bar controls horizontal scroll
+    (function() {
+      const container = document.querySelector('.zoom-down-classes-carousel .zoom-down-carousel-container');
+      const bar = document.querySelector('.zoom-down-indicator-bar');
+      const knob = document.querySelector('.zoom-down-indicator-progress');
+      if (!container || !bar || !knob) return;
+
+      const updateFromScroll = () => {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        const ratio = maxScroll === 0 ? 0 : container.scrollLeft / maxScroll;
+        const trackWidth = bar.clientWidth - knob.clientWidth;
+        knob.style.left = (trackWidth * ratio) + 'px';
+      };
+
+      const updateFromKnob = (clientX) => {
+        const rect = bar.getBoundingClientRect();
+        const x = Math.min(Math.max(clientX - rect.left - knob.clientWidth/2, 0), rect.width - knob.clientWidth);
+        knob.style.left = x + 'px';
+        const ratio = x / (rect.width - knob.clientWidth);
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        container.scrollLeft = maxScroll * ratio;
+      };
+
+      let dragging = false;
+      const start = (e) => { dragging = true; e.preventDefault(); };
+      const move = (e) => { if (!dragging) return; const clientX = e.touches ? e.touches[0].clientX : e.clientX; updateFromKnob(clientX); };
+      const end = () => dragging = false;
+
+      knob.addEventListener('mousedown', start);
+      window.addEventListener('mousemove', move);
+      window.addEventListener('mouseup', end);
+
+      knob.addEventListener('touchstart', start, { passive: true });
+      window.addEventListener('touchmove', move, { passive: true });
+      window.addEventListener('touchend', end);
+
+      container.addEventListener('scroll', updateFromScroll);
+      window.addEventListener('resize', updateFromScroll);
+      updateFromScroll();
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

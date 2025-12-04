@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 브랜드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body class="community-page">
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+      <img src="image/main%20logo.png" alt="로고" class="logo" />
+      <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+  <main>
+
+    <!-- Community Banner Section -->
+    <section class="community-banner">
+      <video src="image/ranking-final.mp4" autoplay muted loop playsinline class="community-banner-video"></video>
+    </section>
+
+    <section class="origin-section reveal">
+      <div class="container">
+        <ul class="leader-list">
+          <li class="leader-item">
+            <span class="leader-rank">4등</span>
+            <div class="leader-avatar"><img src="image/community-hwang.png" alt="4등 아바타"></div>
+            <span class="leader-name">홍길동</span>
+            <span class="leader-score">90</span>
+            <div class="leader-trend up">
+              <span class="trend-arrow">▲</span>
+              <span class="trend-text">TOP</span>
+            </div>
+          </li>
+          <li class="leader-item">
+            <span class="leader-rank">5등</span>
+            <div class="leader-avatar"><img src="image/community-kim.png" alt="5등 아바타"></div>
+            <span class="leader-name">김철수</span>
+            <span class="leader-score">88</span>
+            <div class="leader-trend same">
+              <span class="trend-arrow">–</span>
+              <span class="trend-text">&nbsp;</span>
+            </div>
+          </li>
+          <li class="leader-item">
+            <span class="leader-rank">6등</span>
+            <div class="leader-avatar"><img src="image/community-hwang.png" alt="6등 아바타"></div>
+            <span class="leader-name">김영희</span>
+            <span class="leader-score">77</span>
+            <div class="leader-trend soon">
+              <span class="trend-arrow">➜</span>
+              <span class="trend-text">SOON</span>
+            </div>
+          </li>
+        </ul>
+        <div class="leader-more"><span>+ 더보기</span></div>
+      </div>
+    </section>
+
+    <!-- 회복을 부르는 뇌의 힘 Section -->
+    <section class="brain-power-section reveal">
+      <div class="container">
+        <h2 class="brain-power-title">다양한 커뮤니티를 만나보세요!</h2>
+        <div class="user-comments">
+          <img src="image/community-background.png" alt="배경 이미지" class="user-comments-bg">
+          <div class="comment-card">
+            <div class="user-avatar">
+              <img src="image/community-hwang.png" alt="이채민 아바타">
+            </div>
+            <div class="comment-content">
+              <div class="user-info">
+                <span class="user-name">이채민</span>
+                <span class="user-membership">새싹 맴버</span>
+              </div>
+              <p class="comment-text">같이 매번 접속해서 하루 20분씩 운동할 분들 모아요!! 극 E이신분들이면 좋겠네용 ㅎㅎ 같이 꿀팁도 공유하고 재미있게 재활 하면 좋을 것 같아요</p>
+            </div>
+          </div>
+          
+          <div class="comment-card">
+            <div class="user-avatar">
+              <img src="image/community-kim.png" alt="백진주 아바타">
+            </div>
+            <div class="comment-content">
+              <div class="user-info">
+                <span class="user-name">백진주</span>
+                <span class="user-membership">나무 멤버</span>
+              </div>
+              <p class="comment-text">게임 모드에서 400 레벨까지 만렙 찍으니까 이제 더이상 할 재미가 없어서 같이 줌 크루 만들어서 같은 시간에 접속해서 정확도 100을 목표로 같이 운동 하실분 계신가요</p>
+            </div>
+          </div>
+          
+          <div class="comment-card">
+            <div class="user-avatar">
+              <img src="image/community-kim.png" alt="박서희 아바타">
+            </div>
+            <div class="comment-content">
+              <div class="user-info">
+                <span class="user-name">박서희</span>
+                <span class="user-membership">열심 맴버</span>
+              </div>
+              <p class="comment-text">뇌졸중 센터 추천해주실 수 있나요 ㅜㅜ 지금 있는 센터에서는 운동 재활만 하고 있어서 기기 물리치료를 받고싶어서요</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="connection-line">
+          <div class="line-dots"></div>
+          <div class="line-end"></div>
+        </div>
+        
+        <!-- 소통방 섹션 -->
+        <div class="communication-rooms">
+          <h2 class="rooms-main-title">여러 손결이 유저들과 소통해보아요!</h2>
+          <h3 class="rooms-subtitle">다른 플레이어들의 경험을 들어보고,<br>당신의 이야기도 함께 나눠요.</h3>
+          
+          <div class="rooms-grid">
+            <div class="room-card">
+              <div class="room-icon">
+                <img src="image/community-room1.png" alt="소통방 1">
+              </div>
+              <div class="room-content">
+                <p class="room-title">함께하는 라이브 줌<br>코칭 모임방</p>
+                <p class="room-subtitle"></p>
+              </div>
+              <button class="join-button">바로 참여하기</button>
+            </div>
+            
+            <div class="room-card">
+              <div class="room-icon">
+                <img src="image/community-room2.png" alt="소통방 2">
+              </div>
+              <div class="room-content">
+                <p class="room-title">정확도 100 프로<br>목표 달성 아자아자!</p>
+                <p class="room-subtitle"></p>
+              </div>
+              <button class="join-button">바로 참여하기</button>
+            </div>
+            
+            <div class="room-card">
+              <div class="room-icon">
+                <img src="image/community-room3.png" alt="소통방 3">
+              </div>
+              <div class="room-content">
+                <p class="room-title">병원 정보 공유,<br>물리치료 꿀팁 공유해요</p>
+                <p class="room-subtitle"></p>
+              </div>
+              <button class="join-button">바로 참여하기</button>
+            </div>
+            
+            <div class="room-card active">
+              <div class="room-icon">
+                <img src="image/community-room4.png" alt="소통방 4">
+              </div>
+              <div class="room-content">
+                <p class="room-title">병원 정보 공유,<br>물리치료 꿀팁 공유해요</p>
+                <p class="room-subtitle"></p>
+              </div>
+              <button class="join-button">바로 참여하기</button>
+            </div>
+          </div>
+          
+          <div class="more-rooms">
+            <a href="#" class="more-link">+ 더 많은 유저들과 소통하러 가기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Wrapper Section -->
+    <section class="footer-wrapper-section">
+      <section class="review-section">
+        <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+        <div class="review-text">
+          <span class="text-line-1">더 나은</span>
+          <span class="text-line-2">내일을 위한 작은 습관</span>
+        </div>
+        <div class="review-cta">
+          <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+        </div>
+      </section>
+
+      <!-- 하단 정보 Section -->
+      <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="image/main%20logo.png" alt="가온결 로고" class="logo-image">
+            <span>가온결</span>
+          </div>
+          <div class="footer-info">
+            <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+            <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+            <p><strong>인스타:</strong> @인스타 계정</p>
+            <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+          </div>
+          <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html> 

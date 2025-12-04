@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 브랜드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img src="image/main logo.png" alt="로고" class="logo" />
+        <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section index-hero">
+      <img src="image/main banner green.png" id="hero-banner" alt="메인 배너">
+      <button class="purchase-btn">구매하기</button>
+      
+      <!-- 색상 선택 투명 버튼들 (핸들 위치) -->
+      <button class="color-selector black-selector" type="button" data-color="black" aria-label="블랙 핸들"></button>
+      <button class="color-selector silver-selector" type="button" data-color="silver" aria-label="실버 핸들"></button>
+      <button class="color-selector green-selector" type="button" data-color="green" aria-label="그린 핸들"></button>
+    </section>
+    <!-- 안내/도넛차트 Section -->
+   <section class="guide-section reveal" id="about">
+  <div class="container">
+    <h2 class="section-title">
+      '<span class="highlight">편측 상지마비 재활</span>'을 위한 최고의 선택
+    </h2>
+    
+    <div class="product-name">"손결이"</div>
+    
+    <div class="sidebar-text">
+      <span>뇌졸중 상지 마비</span>
+      <span>재활 기기</span>
+      <span>손결이</span>
+      </div>
+    </div>
+    
+<div class="product-diagram">
+  <!-- 제품 이미지 -->
+  <div class="product-image-container">
+    <img src="image/handdle2.png" alt="제품 이미지" class="product-image">
+  </div>
+  
+  <!-- 호버 포인트들 (먼저 배치) -->
+  <div class="hover-point top-point" data-label="top-right"></div>
+  <div class="hover-point left-point" data-label="left"></div>
+  <div class="hover-point bottom-left-point" data-label="bottom-left"></div>
+  <div class="hover-point bottom-right-point" data-label="bottom-right"></div>
+  
+  <!-- 설명 텍스트들 (호버 포인트 뒤에 배치) -->
+  <div class="feature-label top-right" data-label="top-right">
+    <p>측각 자료를 위한 진동모터 탑재</p>
+    <p class="feature-detail"><span class="highlight-green">진동 세기 세밀 조정 가능</span></p>
+  </div>
+  
+  <div class="feature-label left" data-label="left">
+    <p>MPU6050 3축 자이로 가속도 센서</p>
+    <p class="feature-detail">를 이용한 <span class="highlight-green">각도 민감도 설정 가능</span></p>
+  </div>
+  
+  <div class="feature-label bottom-left" data-label="bottom-left">
+    <p><span class="highlight-green">블루투스 기능</span> 탑재로</p>
+    <p>공간활용에 제약이 없음</p>
+  </div>
+  
+  <div class="feature-label bottom-right" data-label="bottom-right">
+    <p>버튼과 손잡이 부분 쿠션감</p>
+    <p>으로 다양한 <span class="highlight-green">촉각 개선</span></p>
+  </div>
+</div>
+    <!-- 특징 카드 Section -->
+<section class="feature-section reveal" id="feature">
+  <div class="container">
+    <div class="card-row">
+      <div class="card">
+        <div class="card-image-placeholder">
+          <img src="image/dumbel.png" alt="덤벨처럼 이용" class="card-image">
+        </div>
+        <p class="card-title">덤벨처럼 이용하며</p>
+        <p class="card-subtitle">다양한 <span class="highlight-green">자극 구현</span></p>
+      </div>
+      
+      <div class="card">
+        <div class="card-image-placeholder">
+          <img src="image/racing game.png" alt="레이싱 게임" class="card-image">
+        </div>
+        <p class="card-title">레이싱 게임을 이용한</p>
+        <p class="card-subtitle"><span class="highlight-green">반응력 높이기</span></p>
+      </div>
+      
+      <div class="card">
+        <div class="card-image-placeholder">
+          <img src="image/main motion traking.png" alt="모션트래킹" class="card-image">
+        </div>
+        <p class="card-title"><span class="highlight-green">모션트래킹</span>을 통한</p>
+        <p class="card-subtitle">정확한 재활</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- 성장 그래프 Section -->
+    <section class="growth-section reveal" id="growth">
+  <div class="container">
+    <div class="growth-title">
+      <h1>사용방법</h1>
+      <h5>손결이 사용방법</h5>
+    </div>
+    
+    <!-- 사용 단계들 -->
+    <div class="usage-steps">
+      <div class="usage-step">
+        <div class="step-number">1</div>
+        <div class="step-illustration">
+          <img src="image/haddle first.png" alt="1단계" class="step-image">
+        </div>
+        <div class="step-content">
+          <p class="step-text">핸들을 들고 중앙의 버튼을 2초 이상 꾹 눌러서 전원을 켜주세요.</p>
+          <p class="step-subtext">전원이 켜지면 LED 불빛이 반짝거리며 켜집니다</p>
+        </div>
+      </div>
+      
+      <div class="usage-step">
+        <div class="step-number">2</div>
+        <div class="step-illustration">
+          <img src="image/haddle second.png" alt="2단계" class="step-image">
+        </div>
+        <div class="step-content">
+          <p class="step-text">핸들을 몸의 가운데에 위치한 후, 엄지 손가락에 위치해있는 버튼을 눌러서 수동을 맞춰세요</p>
+          <p class="step-subtext">정확한 위치 각도를 측정하기 위해서는 꼭 버튼을 눌러야합니다</p>
+        </div>
+      </div>
+      
+      <div class="usage-step">
+        <div class="step-number">3</div>
+        <div class="step-illustration">
+          <img src="image/haddle second.png" alt="2단계" class="step-image">
+        </div>
+        <div class="step-content">
+          <p class="step-text">핸들 사용을 중료할때는 중앙의 버튼을 한번 눌러서 전원을 꺼주세요</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- 제품 규격 Section -->
+    <section class="product-spec-section reveal" id="product-info">
+      <div class="spec-content">
+        <!-- 왼쪽 텍스트 영역 -->
+        <div class="spec-text">
+          <h1 class="spec-title">제품 규격 안내</h1>
+          <p class="spec-description">
+            새로운 내부 디자인으로 인해, 더욱 편안한 그립감과 정밀한 센서 배치가 가능해졌습니다. 
+            그 덕분에 손결이는 역대 최고의 재활 기기 성능을 갖추게 되었죠. 
+            긴 시간 운동을 할 때도, 집중적인 재활 훈련을 할 때도 언제든 준비 완료랍니다.
+          </p>
+        </div>
+        
+        <!-- 오른쪽 이미지 영역 -->
+        <div class="spec-image">
+          <img src="image/handdle main.png" alt="손결이 제품" class="handle-main-image">
+          
+          <!-- 가로 치수선 (핸들 아래) -->
+          <div class="dimension-line horizontal">
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <span class="dimension-text">21.15 CM</span>
+          </div>
+          
+          <!-- 세로 치수선 (핸들 오른쪽) -->
+          <div class="dimension-line vertical">
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <span class="dimension-text">24 CM</span>
+          </div>
+          
+          <!-- 대각선 치수선 (오른쪽 아래) -->
+          <div class="dimension-line angled">
+            <div class="dimension-tick"></div>
+            <div class="dimension-tick"></div>
+            <span class="dimension-text">7.97 CM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drawing 이미지 Section -->
+    <section class="drawing-section reveal">
+      <div class="drawing-container">
+        <img src="image/drawing3.jpeg" alt="제품 드로잉" class="drawing-image">
+      </div>
+    </section>
+
+    <!-- 사용 편의성 Section -->
+    <section class="usability-section reveal">
+      <div class="usability-content">
+        <!-- 왼쪽 이미지 영역 -->
+        <div class="usability-image-container">
+          <img src="image/index-section 3.png" alt="사용 편의성" class="usability-image">
+        </div>
+        
+        <!-- 오른쪽 텍스트 영역 -->
+        <div class="usability-text">
+          <h1 class="usability-title">사용 편의성</h1>
+          <p class="usability-description">
+            약 380g의 가벼운 무게와 부드러운 질감, 360도 회전 구조로<br>
+            누구나 손끝으로 직관적인 사용감을 느낄 수 있습니다.<br>
+            손결이로 답을 찾는 — 최고의 사용 편의성
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 하단 CTA -->
+  <section class="review-section">
+    <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+    <div class="review-text">
+      <span class="text-line-1">더 나은</span>
+      <span class="text-line-2">내일을 위한 작은 습관</span>
+    </div>
+    <div class="review-cta">
+      <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+    </div>
+  </section>
+
+  <!-- 하단 정보 Section -->
+  <footer class="footer-section" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="image/main logo.png" alt="가온결 로고" class="logo-image">
+          <span>가온결</span>
+        </div>
+        <div class="footer-info">
+          <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+          <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+          <p><strong>인스타:</strong> @인스타 계정</p>
+          <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+        </div>
+        <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html> 

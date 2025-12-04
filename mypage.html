@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 브랜드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body class="mypage-body">
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img src="image/main%20logo.png" alt="로고" class="logo" />
+        <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+  <main>
+    <!-- Hero Section - Welcome Screen -->
+    <section class="mypage-hero-section">
+      <div class="hero-sticky">
+        <div class="welcome-container">
+          <div class="welcome-text">
+            <h2 class="user-name">이채민님,</h2>
+            <p class="welcome-message">개인 공간에 오신 것을 환영합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Control Setting Section -->
+    <section class="mypage-control-section reveal">
+      <div class="control-container">
+        <!-- Control Setting Title -->
+        <div class="control-title">
+          <h3>Control Setting</h3>
+        </div>
+
+        <!-- Main Control Area -->
+        <div class="main-control-area">
+          <!-- Connection Lines -->
+          <svg class="connection-lines" width="100%" height="100%">
+            <!-- Left Panel Lines -->
+            <line class="connection-line left-line-1" x1="28%" y1="20%" x2="46%" y2="35%" />
+            <line class="connection-line left-line-2" x1="28%" y1="50%" x2="46%" y2="50%" />
+            <line class="connection-line left-line-3" x1="28%" y1="80%" x2="46%" y2="65%" />
+            
+            <!-- Right Panel Lines -->
+            <line class="connection-line right-line-1" x1="72%" y1="20%" x2="54%" y2="35%" />
+            <line class="connection-line right-line-2" x1="72%" y1="50%" x2="54%" y2="50%" />
+            <line class="connection-line right-line-3" x1="72%" y1="80%" x2="54%" y2="65%" />
+          </svg>
+          
+          <!-- Left Panel -->
+          <div class="control-panel left-panel">
+            <div class="panel-header">
+              <span class="panel-label">L</span>
+              <span class="panel-status">마비 / 비마비</span>
+      </div>
+            
+            <div class="mypage-control-module">
+              <label>각도 민감도 설정</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="left" data-control="angle">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="left" data-control="angle" style="width: 45%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="left" data-control="angle">+</button>
+              </div>
+            </div>
+
+            <div class="mypage-control-module">
+              <label>회전 저항 조절</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="left" data-control="resistance">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="left" data-control="resistance" style="width: 100%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="left" data-control="resistance">+</button>
+              </div>
+            </div>
+        
+            <div class="mypage-control-module">
+              <label>진동 세기</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="left" data-control="vibration">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="left" data-control="vibration" style="width: 40%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="left" data-control="vibration">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Central Handle Area -->
+          <div class="central-handle">
+            <div class="handle-placeholder glow-green" data-glow-state="green">
+              <img src="image/handdle2.png" alt="손결이 핸들" class="handle-image">
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="control-panel right-panel">
+            <div class="panel-header">
+              <span class="panel-label">R</span>
+              <span class="panel-status">마비 / 비마비</span>
+            </div>
+            
+            <div class="mypage-control-module">
+              <label>각도 민감도 설정</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="right" data-control="angle">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="right" data-control="angle" style="width: 45%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="right" data-control="angle">+</button>
+              </div>
+            </div>
+
+            <div class="mypage-control-module">
+              <label>회전 저항 조절</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="right" data-control="resistance">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="right" data-control="resistance" style="width: 45%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="right" data-control="resistance">+</button>
+              </div>
+            </div>
+
+            <div class="mypage-control-module">
+              <label>진동 세기</label>
+              <div class="mypage-slider-container">
+                <button class="mypage-control-btn mypage-minus-btn" data-panel="right" data-control="vibration">-</button>
+                <div class="mypage-slider">
+                  <div class="mypage-slider-fill" data-panel="right" data-control="vibration" style="width: 40%;"></div>
+                  <div class="mypage-slider-thumb"></div>
+                </div>
+                <button class="mypage-control-btn mypage-plus-btn" data-panel="right" data-control="vibration">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+            <!-- Bottom Settings -->
+            <div class="bottom-settings">
+              <div class="mypage-bottom-control">
+                <label>LED 색 조절</label>
+                <div class="mypage-color-options">
+                  <div class="mypage-color-circle mypage-color-red" data-glow="red"></div>
+                  <div class="mypage-color-circle mypage-color-green mypage-color-active" data-glow="green"></div>
+                  <div class="mypage-color-circle mypage-color-yellow" data-glow="yellow"></div>
+                </div>
+              </div>
+              
+              <div class="mypage-bottom-control">
+                <label>전체 음량조절</label>
+                <div class="mypage-slider-container">
+                  <button class="mypage-control-btn mypage-minus-btn" data-panel="volume" data-control="volume">-</button>
+                  <div class="mypage-slider">
+                    <div class="mypage-slider-fill" data-panel="volume" data-control="volume" style="width: 45%;"></div>
+                    <div class="mypage-slider-thumb"></div>
+                  </div>
+                  <button class="mypage-control-btn mypage-plus-btn" data-panel="volume" data-control="volume">+</button>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- 일일 리포트 Section -->
+    <section class="daily-report-section reveal">
+      <div class="container">
+        <h2 class="daily-report-title">일일 리포트</h2>
+        
+        <!-- 날짜 네비게이션 -->
+        <div class="date-navigation">
+          <div class="date-item">13</div>
+          <div class="date-item">14</div>
+          <div class="date-item">15</div>
+          <div class="date-item active">오늘, 16 목</div>
+          <div class="date-item">17</div>
+          <div class="date-item">18</div>
+          <div class="date-item">19</div>
+        </div>
+        
+        <!-- 리포트 카드들 -->
+        <div class="report-cards">
+          <!-- 첫 번째 행: 악력수치, 추천운동, 감정 리포트 -->
+          <div class="report-row">
+            <div class="report-card grip-strength-card">
+              <img src="image/report1.png" alt="악력수치">
+            </div>
+            <div class="report-card recommended-exercise-card">
+              <img src="image/report2.png" alt="추천운동">
+            </div>
+            <div class="report-card emotion-report-card">
+              <img src="image/report3.png" alt="감정 리포트">
+            </div>
+          </div>
+          
+          <!-- 두 번째 행: 스트레칭 범위, 오늘 총 운동 시간 -->
+          <div class="report-row">
+            <div class="report-card stretching-range-card">
+              <img src="image/report5.png" alt="스트레칭 범위">
+            </div>
+            <div class="report-card exercise-time-card">
+              <img src="image/report4.png" alt="오늘 총 운동 시간">
+            </div>
+          </div>
+          
+          <!-- 세 번째 행: 운동 정확도 -->
+          <div class="report-row">
+            <div class="report-card exercise-accuracy-card">
+              <img src="image/report6.png" alt="운동 정확도">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 주간 운동 리포트 보기 Section -->
+    <section class="weekly-report-section reveal">
+      <div class="container">
+        <h2 class="weekly-report-title">주간 운동 리포트 보기</h2>
+        
+        <!-- 캐러셀 컨테이너 -->
+        <div class="weekly-carousel-container">
+          <div class="weekly-carousel-wrapper">
+            <div class="weekly-carousel" id="weeklyCarousel">
+              <div class="weekly-report-card">
+                <img src="image/report-final.png" alt="주간 리포트 1">
+              </div>
+              <div class="weekly-report-card">
+                <img src="image/report-final.png" alt="주간 리포트 2">
+              </div>
+              <div class="weekly-report-card">
+                <img src="image/report-final.png" alt="주간 리포트 3">
+              </div>
+              <div class="weekly-report-card">
+                <img src="image/report-final.png" alt="주간 리포트 4">
+              </div>
+            </div>
+          </div>
+          
+          <!-- 네비게이션 버튼 -->
+          <button class="weekly-carousel-btn weekly-prev-btn" onclick="moveWeeklyCarousel(-1)" aria-label="이전 리포트">&#60;</button>
+          <button class="weekly-carousel-btn weekly-next-btn" onclick="moveWeeklyCarousel(1)" aria-label="다음 리포트">&#62;</button>
+          </div>
+          
+        <!-- 페이지네이션 인디케이터 -->
+       
+      </div>
+    </section>
+    
+    <section class="review-section">
+      <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+      <div class="review-text">
+        <span class="text-line-1">더 나은</span>
+        <span class="text-line-2">내일을 위한 작은 습관</span>
+      </div>
+      <div class="review-cta">
+        <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+      </div>
+    </section>
+
+    <!-- 하단 정보 Section -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="image/main%20logo.png" alt="가온결 로고" class="logo-image">
+            <span>가온결</span>
+          </div>
+          <div class="footer-info">
+            <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+            <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+            <p><strong>인스타:</strong> @인스타 계정</p>
+            <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+          </div>
+          <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html> 

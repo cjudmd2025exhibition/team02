@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 브랜드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body class="introduce-page">
+  <!-- 상단 네비게이션 -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+      <img src="image/main logo.png" alt="로고" class="logo" />
+      <span class="brand-name">가온결</span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">기기사용설명서</a></li>
+      <li><a href="introduce.html">브랜드 소개</a></li>
+      <li><a href="zoom.html">온라인강의안내</a></li>
+      <li><a href="community.html">소통창</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="start.html">로그인/회원가입</a></li>
+    </ul>
+    <form class="search-form" onsubmit="return handleSearch(event);">
+    <input type="text" class="search-input" placeholder="검색" />
+    <button type="submit" class="search-btn" aria-label="검색">
+      <!-- SVG 돋보기 아이콘 -->
+      <svg width="24" height="24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+  </form>
+  </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="image/banner introduce.png">
+      <div class="hero-text-overlay">
+        <h1 class="hero-title">가온결</h1>
+        <p class="hero-subtitle">다시 되찾는 손의 감각</p>
+      </div>
+    </section>
+
+    <!-- 가온결의 시작 Section -->
+    <section class="origin-section reveal">
+      <div class="container">
+        <h2 class="origin-title">가온결의 시작</h2>
+        <div class="origin-content">
+          <div class="origin-text">
+            <p>뇌졸중은 고령화로 인해 빠르게 증가하는 대표적 노인성 질환으로, 환자 수와 의료 복지 수요가 꾸준히 늘어나고 있다.</p>
+            <p>그러나 의료 인력과 재활 자원은 부족해 조기 재활과 체계적 관리가 중요하다.</p>
+            <p>상지 재활용 기기를 활용한 연구 결과, 근육 활성화가 마비 회복과 기능 개선에 효과적임이 확인되었으며, <strong>가온결은</strong> 균형감각 회복, 상지 운동 기능 회복, 전반적인 삶의 질 향상 등 긍정적인 변화를 이끌어낼 수 있음을 확인할 수 있었다.</p>
+          </div>
+          <div class="origin-image">
+            <img src="image/new brain.png" alt="뇌 구조" class="brain-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 회복을 부르는 뇌의 힘 Section -->
+    <section class="brain-power-section reveal">
+      <div class="container">
+        <h2 class="brain-power-title">회복을 부르는 뇌의 힘</h2>
+        
+        <div class="brain-concepts">
+          <div class="concept-item">
+            <p class="concept-text">뇌 손상 시 다른 부위가 대신 기능하는 것</p>
+            <div class="concept-line"></div>
+          </div>
+          <div class="concept-item">
+            <p class="concept-text">뇌신경-근육-감각 순서로 운동을 함</p>
+            <div class="concept-line"></div>
+          </div>
+          <div class="concept-item">
+            <p class="concept-text">한쪽 손 마비-반대 손 사용으로 뇌를 자극하는 것</p>
+            <div class="concept-line"></div>
+          </div>
+        </div>
+        
+        <div class="brain-process">
+          <div class="process-item">
+            <div class="process-circle">
+              <p>신경가소성<br>촉진</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <div class="process-circle">
+              <p>운동피드백<br>루프 재건</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <div class="process-circle">
+              <p>거울 뉴런<br>활성화</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="brain-explanation">
+          <p>뇌 손상 시 반복적인 손 운동과 반대 손 사용, 거울 치료 등이 <span class="highlight-green">뇌 신경 경로를 자극해 기능 회복을 돕는다.</span></p>
+          <p>이 과정에서, 뇌는 신경 경로를 재구축하고 비활성화 된 영역을 활성화한다.</p>
+          <p class="source">출처 : 보건복지부 2023 노인 뇌졸중 통계</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 손결이 7단계 프로세스 Section -->
+    <section class="process-section reveal">
+      <div class="container">
+        <div class="process-header">
+          <h2 class="process-title">가온결의 대표 제품인 <span class="highlight-green">손결이</span>는 총 7단계의 프로세스를 제공합니다.</h2>
+        </div>
+        
+        <div class="process-timeline">
+          <!-- 중앙 타임라인 -->
+          <div class="timeline-line"></div>
+          
+          <!-- Step 1 - 왼쪽 -->
+          <div class="process-step step-left">
+            <div class="process-card">
+              <div class="step-number">1</div>
+              <h3>돌려돌려 핸들판</h3>
+              <p>핸들을 돌리며 같은 방향으로 허리 좌우 스트레칭</p>
+            </div>
+          </div>
+          
+          <!-- Step 2 - 오른쪽 -->
+          <div class="process-step step-right">
+            <div class="process-card">
+              <div class="step-number">2</div>
+              <h3>오지마! 운동</h3>
+              <p>앉아서 핸들을 밀며 바닥을 향해 상체 내려가기</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 - 왼쪽 -->
+          <div class="process-step step-left">
+            <div class="process-card">
+              <div class="step-number">3</div>
+              <h3>불빛 반응 핸들 돌리기</h3>
+              <p>불빛이 들어오는 방향으로 다리를 움직이며 핸들 돌리기</p>
+            </div>
+          </div>
+          
+          <!-- Step 4 - 오른쪽 -->
+          <div class="process-step step-right">
+            <div class="process-card">
+              <div class="step-number">4</div>
+              <h3>왼-오른-왼 패턴 돌리기</h3>
+              <p>화면에서 제시된 방향 순서대로 핸들을 돌리기</p>
+            </div>
+          </div>
+          
+          <!-- Step 5 - 왼쪽 -->
+          <div class="process-step step-left">
+            <div class="process-card">
+              <div class="step-number">5</div>
+              <h3>약한 팔만 돌리기</h3>
+              <p>마비 쪽 팔만 사용해 핸들 돌리기</p>
+            </div>
+          </div>
+          
+          <!-- Step 6 - 오른쪽 -->
+          <div class="process-step step-right">
+            <div class="process-card">
+              <div class="step-number">6</div>
+              <h3>부릉~가요 운동</h3>
+              <p>한 발 앞으로 내딛으며 핸들 회전하기</p>
+            </div>
+          </div>
+          
+          <!-- Step 7 - 왼쪽 -->
+          <div class="process-step step-left">
+            <div class="process-card">
+              <div class="step-number">7</div>
+              <h3>2분간 일정 속도로 돌리기</h3>
+              <p>일정한 속도를 유지하며 2분 동안 핸들 회전하기</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 뇌 자극 섹션 -->
+    <section class="brain-stimulation-section reveal">
+      <div class="container">
+        <div class="stimulation-header">
+          <h1>뇌 자극에 따른 기능을 고려하여,<h1>
+          <h1>뇌를 자극하는 운동 프로세스를 제공합니다.<h1>
+        </div>
+        
+        <div class="brain-diagram-container">
+          <img src="image/zoom brain.png" alt="뇌 구조도" class="brain-image">
+          
+          <!-- 전기 자극 효과 (민트색 지그재그 선) -->
+          <svg class="stim-line" viewBox="0 0 600 900" preserveAspectRatio="none" aria-hidden="true">
+            <path class="stim-path base" d="M300 140 L270 240 L330 320 L250 420 L360 520 L240 630 L320 740 L280 820" />
+            <path class="stim-path pulse" d="M300 140 L270 240 L330 320 L250 420 L360 520 L240 630 L320 740 L280 820" />
+          </svg>
+
+          <!-- 혈관(pea) 이미지 -->
+          <img src="image/zoom-hyeol.png" alt="혈관" class="vessel-image">
+
+          <!-- 손 이미지 -->
+          <img src="image/zoom hand.png" alt="손" class="hand-image">
+          
+          <!-- + 버튼들과 라벨 -->
+          <div class="brain-label top-left" data-description="1차 운동 피질은 팔·손의 직접적인 움직임을 명령하는 핵심 영역입니다. 손상된 반대쪽 팔이 마비되거나 움직임이 매우 제한되며, 반복적이고 집중된 상지 운동은 신경 재조직화를 유도하여 마비된 팔의 움직임을 서서히 회복하게 합니다. 특히 의도적 움직임이 피질을 활성화시켜 회복을 촉진합니다.">
+            <div class="plus-button">+</div>
+            <span class="label-text">1차 운동 피질</span>
+          </div>
+          
+          <div class="brain-label top-right" data-description="감각 피질은 몸의 각 부위에서 오는 촉각, 온도, 압력 등의 감각 정보를 처리하는 뇌 영역입니다. 손결이의 다양한 촉각 자극이 이 영역을 활성화시킵니다.">
+            <div class="plus-button">+</div>
+            <span class="label-text">감각 피질</span>
+          </div>
+          
+          <div class="brain-label far-right" data-description="시각 피질은 눈으로 받은 시각 정보를 처리하고 해석하는 뇌 영역입니다. 손결이의 시각적 피드백과 LED 반응이 이 영역을 자극합니다.">
+            <div class="plus-button">+</div>
+            <span class="label-text">시각 피질</span>
+          </div>
+          
+          <div class="brain-label bottom-right" data-description="진정계와 소뇌의 상호작용은 운동 조절과 균형 유지에 중요한 역할을 합니다. 손결이의 반복적인 운동 패턴이 이 시스템을 강화시킵니다.">
+            <div class="plus-button">+</div>
+            <span class="label-text">진정계 + 소뇌 상호작용</span>
+          </div>
+          
+          <div class="brain-label bottom-center" data-description="운동 전피질은 복잡한 운동 계획과 준비를 담당하는 뇌 영역입니다. 손결이의 다양한 운동 패턴이 이 영역의 신경 연결을 강화시킵니다.">
+            <span class="label-text">운동 전피질</span>
+            <div class="plus-button">+</div>
+          </div>
+          
+          <div class="brain-label bottom-left" data-description="기저핵은 자동화된 운동 패턴과 동기 부여를 조절하는 뇌 구조입니다. 손결이의 반복적인 운동이 이 영역의 기능을 개선시킵니다.">
+            <span class="label-text">기저핵</span>
+            <div class="plus-button">+</div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="review-section">
+      <img src="image/footer-banner.jpeg" alt="사용자 리뷰" class="review-image">
+      <div class="review-text">
+        <span class="text-line-1">더 나은</span>
+        <span class="text-line-2">내일을 위한 작은 습관</span>
+      </div>
+      <div class="review-cta">
+        <button class="cta-button" onclick="window.location.href='start.html'">지금 시작하기</button>
+      </div>
+    </section>
+
+    <!-- 하단 정보 Section -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="image/main logo.png" alt="가온결 로고" class="logo-image">
+            <span>가온결</span>
+          </div>
+          <div class="footer-info">
+            <p><strong>전시 공간:</strong> 충청북도 청주시 청원구 안덕벌로 19번길 116</p>
+            <p><strong>전시 일정:</strong> 2025.12.12 - 12.15</p>
+            <p><strong>인스타:</strong> @인스타 계정</p>
+            <p><strong>문의 전화:</strong> 043 - 123 - 4567</p>
+          </div>
+          <p class="footer-copyright">Copyrights 2025, Department of Digital Media Design, Cheongju University. all rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html> 
